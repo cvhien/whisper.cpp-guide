@@ -38,7 +38,8 @@ Cài yt-dlp:
 $:pip install yt-dlp
 Dùng công cụ youtube download tải về file âm thanh, cho bài https://youtu.be/ID.
 $:yt-dlp -f 251 -o "%(id)s.%(ext)s" ID
-(Tải về file ID.webm với tuỳ chọn định dạng 251. Hiển thị các định dạng hỗ trợ tải về:
+(Tải về file ID.webm với tuỳ chọn định dạng 251.
+Hiển thị các định dạng hỗ trợ tải về:
 $:yt-dlp -F ID)
 Chuyển sang định dạng được hỗ trợ, wav 16bit:
 $:ffmpeg -i ID.webm -ar 16000 -ac 1 -c:a pcm_s16le ID_index34.wav
